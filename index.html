@@ -1,60 +1,60 @@
 <!DOCTYPE html>
-<超文本标记语言>
-  <头>
-	<梅塔字符集="utf-8" 名字="viewport" 内容="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<标题>滑动跳转</标题>
-  </头>
-  <身体>	
-	<中心><h3 班级="ym">页面1</h3><按钮onclick="xyy();" 身份证="xyy">下一页</按钮></中心>
-<级班级="a" 身份证="a">
-<中心><h3 班级="ym" 身份证="ymb">页面2</h3><按钮onclick="syy();" 身份证="syya">上一页</按钮></中心>
-</级>
-  </身体>
-<风格>
-身体{
-边缘:0;
-衬垫:0;
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>滑动跳转</title>
+  </head>
+  <body>	
+	<center><h3 class="ym">页面1</h3><button onclick="xyy();" id="xyy">下一页</button></center>
+<div class="a" id="a">
+<center><h3 class="ym" id="ymb">页面2</h3><button onclick="syy();" id="syya">上一页</button></center>
+</div>
+  </body>
+<style>
+body{
+margin:0;
+padding:0;
 }
 .ym{
-margin-top:150小卖部;
+margin-top:150px;
 }
-@keyframes一个{
+@keyframes a{
 0%{
-宽度:0小卖部;
-border-radius:20小卖部;
+width:0px;
+border-radius:20px;
 }
 100%{
-宽度:100大众;
-border-radius:20小卖部;
+width:100vw;
+border-radius:20px;
 }
 }
 .a{
-高度:210.5大众;
-box-shadow:0小卖部 5小卖部 10小卖部 15小卖部 rgba(0,0,0,0.1);
-位置:绝对的;
-顶:0;
-正确的:0;
-background-color:白色;
+height:210.5vw;
+box-shadow:0px 5px 10px 15px rgba(0,0,0,0.1);
+position:absolute;
+top:0;
+right:0;
+background-color:white;
 }
-h3[身份证="ymb"]{
-显示:没有一个;
+h3[id="ymb"]{
+display:none;
 }
-按钮[身份证="syya"]{
-显示:没有一个;
+button[id="syya"]{
+display:none;
 }
-@keyframesB{
+@keyframes b{
 0%{
-宽度:100大众;
-border-radius:20小卖部;
+width:100vw;
+border-radius:20px;
 }
 100%{
-宽度:0小卖部;
-border-radius:20小卖部;
+width:0px;
+border-radius:20px;
 }
 }
-</风格>
-<剧本>
-功能 xyy(){
+</style>
+<script>
+function xyy(){
 ymb.style.display="block";
 syya.style.display="block";
 a.style.animationName="a";
@@ -68,5 +68,5 @@ a.style.animationName="b";
 a.style.animationDuration="0.5s";
 a.style.width="0px";
 }
-</剧本>
-超文本标记语言
+</script>
+</html>
